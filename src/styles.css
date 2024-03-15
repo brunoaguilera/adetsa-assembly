@@ -1,0 +1,83 @@
+/* Alinear a la izquierda */
+.input-left-align {
+    text-align: left;
+}
+
+/* Alinear a la derecha */
+.input-right-align {
+    text-align: right;
+}
+
+.abrir-modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.animacion {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.surface-50 {
+    border: 4px solid #ccc; /* Agrega un borde delgado */
+    padding: 5px; /* Ajusta el espacio dentro del borde a tu gusto */
+}
+
+.narrow-box {
+    max-width: 75%; /* Ajusta el ancho máximo según tus necesidades */
+    margin-right: auto; /* Empuja el contenedor hacia la izquierda */
+}
+
+#wheel #canvas {
+    width: 100%;
+    max-width: 600px;
+}
+
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Ajusta los elementos con espacio alrededor */
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo disponible */
+}
+
+.action-button {
+    margin: 0 10px; /* Añade un margen horizontal para asegurar espacio entre botones */
+    /* Ajusta el margen según necesites para obtener la separación deseada */
+}
